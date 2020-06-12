@@ -41,8 +41,8 @@ $(document).ready(function() {
  
 
     function displayArray(num) {
-      const dividedNum = num.split(' ');
-      $("#arrayoutput").text("<li>" + dividedNum + "</li>");
+      const dividedNum = num;
+      $("#arrayoutput").text(dividedNum);
     }
  
   });
