@@ -18,16 +18,18 @@ $(document).ready(function() {
     numberInput.forEach(function(number) { 
       if (number.includes("3")){
         numberOutput.push(beneighbor)
-        console.log(numberOutput)
-        return beneighbor
+        displayArray(numberOutput)
       } else if (number.includes("2"))  {
         numberOutput.push(boop)
-        console.log(numberOutput)
+        displayArray(numberOutput)
+        $("#arrayoutput").text(numberOutput)
       } else if (number.includes("1")) {
         numberOutput.push(beep)
-        console.log(numberOutput)
+        displayArray(numberOutput)
+        $("#arrayoutput").text(numberOutput)
       } else {
         numberOutput.push(number)
+        displayArray(numberOutput)
       }
     });
   
@@ -36,9 +38,13 @@ $(document).ready(function() {
   const digitInput = $("input#number").val();
   event.preventDefault();
   const covertedNumber = numberArray(digitInput);
-  
-  $("#output").text(numberLoop);
+ 
 
+    function displayArray(num) {
+      const dividedNum = num.split(' ');
+      $("#arrayoutput").text("<li>" + dividedNum + "</li>");
+    }
+ 
   });
 });
 
