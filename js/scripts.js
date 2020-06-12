@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $("#").submit(function(event) {
-    //const colorInput = $("input#color").val();
+  $("form#numbers").submit(function(event) {
+    const numberInput = $("input#number").val();
     
-    //$(".color").text(colorInput)
+    $(".color").text(colorInput)
 
-    //event.preventDefault();
+    event.preventDefault();
   });
 });
