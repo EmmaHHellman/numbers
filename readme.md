@@ -1,63 +1,51 @@
-# _Programming Language Suggester_
+# _Mr. Roboger's Neighborhood_
 
-#### _A website for picking a user's favorite programming language, June 5, 2020_
+#### _A website that converts a number into a range of numbers with exceptions, June 12, 2020_
 
 #### By _**Emma Hellman**_
 
 ## Description
 
-_The website allows users to select answers from a variety of survey questions. Depending on their responses, a programming language suited for them will be generated. You can check out the programming language suggester here https://emmahhellman.github.io/languages/_
+_The website allows users to input a number which returns a range of numbers from 0 to the user inputted number with exceptions. If the number contains a 1 the digits will be replaced with "beep". If the number contains a 2 the digit will be replaced by "boop". If the digit contains a 3, the digit will be replaced with "Won't you be my neighbor". The rules are written from least to most important. So if the number is 32, the number 32 is replaced by "Won't you be my neighbor". 
 
 ## Specifications
 
 ##Behavior##
 
-Translate 1,2, or 3 into I,II or III
+Return a range of numbers from 0 to the users inputted number
+Input: '4'
+Output: '0, 1, 2, 3, 4'
+
+##Behavior##
+
+All digits containing a 1 should output "Beep!"
+Input: 1
+Output: "0", "Beep"
+
+##Behavior##
+
+All digits containing a 2 should output "Boop!"
 Input: 2
-Output: II
+Output: "0", "Beep", "Boop!"
 
+##Behavior##
+
+All digits containining a 3 should output "Won't you be my neighbor"
 Input: 3
-Output: III
+Output: "0", "Beep", "Boop", "Won't you be my neighbor"
 
 ##Behavior##
 
-Translate 5 into a V when input by user
-Input: 5
-Output: V
+The rules are written from least to most important so the second takes precedence over the first and the third takes precedence over the second.  
+Input: 23
+Output: "Won't you be my neighbor?"
 
-##Behavior##
-
-Translate 10 into X when input by user
-Input: 10
-Output: X
-
-##Behavior##
-
-Translate 50 into L when input by user
-Input: 50
-Output: L
-
-##Behavior##
-
-Translate 100 into a C when input by user
-Input: 100
-Output: C
-
-##Behavior##
-
-Translate 500 into a D when input by user
-Input: 500
-Output: D
-
-##Behavior##
-
-Translate 1000 into a M when input by user
-Input: 1000
-Output: M
+Input: 12 
+Output: "Boop" 
 
 ## Setup/Installation Requirements
 
-* _Clone this repository https://github.com/EmmaHHellman/languages.git_
+* _Clone this repository https://github.com/EmmaHHellman/numbers.git_
 * _Open index file in browser_
 
 ## Known Bugs
