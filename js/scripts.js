@@ -8,6 +8,7 @@ $(document).ready(function() {
   // Business logic
   function convertNumber(numberInput) {
 
+    var numberoutput = [];
     for (var i = 0; i < numberInput.length; i++) {
       if(numberInput[i].includes(3)) {
         console.log("three!")
@@ -30,6 +31,7 @@ $(document).ready(function() {
       } else if (numberInput[i].includes(1)) {
         return "Beep!";
       }
+      numberoutput.push(i); 
   }
 
 }
