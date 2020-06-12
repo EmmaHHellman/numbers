@@ -11,7 +11,7 @@ $(document).ready(function() {
     var numberoutput = [];
     for (var i = 0; i < numberInput.length; i++) {
       if(numberInput[i].includes(3)) {
-        console.log("three!")
+        console.log(numberInput)
         if (numberInput[i].includes(2)) {
           console.log("two!")
           if (numberInput[i].includes(1)) {
@@ -31,7 +31,8 @@ $(document).ready(function() {
       } else if (numberInput[i].includes(1)) {
         return "Beep!";
       }
-      numberoutput.push(i); 
+      const arrayOutput = numberoutput.push(i);
+      console.log(arrayOutput);
   }
 
 }
