@@ -11,29 +11,34 @@ $(document).ready(function() {
 
   var numberArray = function(num) {
     const numberInput = [];
-    for(i = 0; i <= num; i++) {
+    for (i = 0; i <= num; i++) {
       numberInput.push(i.toString());
     }
 
+    console.log(numberInput)
+
 for (i = 0; i < numberInput.length; i++) {
-    if (numberInput[i].includes("3")){
+    if (digitInput.includes("3")){
+      console.log(numberInput)
       return beneighbor
-    } else if (numberInput[i].includes("2"))  {
+    } else if (digitInput.includes("2"))  {
+      console.log(numberInput)
       return boop
-    } else if (numberInput[i].includes("1")) {
+    } else if (digitInput.includes("1")) {
+      console.log(numberInput)
       return beep
     } else {
-      return number
+      return "number"
     }
   };
-
-  return message;
+  
 }
 // UI logic 
   const digitInput = $("input#number").val();
   event.preventDefault();
   const covertedNumber = numberArray(digitInput);
-  $("#output").text(covertedNumber)
+  
+  $("#output").text(covertedNumber);
 
   });
 });
