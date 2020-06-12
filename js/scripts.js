@@ -2,9 +2,7 @@
 $(document).ready(function() {
   $("form#enternumber").submit(function(event) {
   
-
   // Business logic
-
   const beep = "beep",
   boop = "boop",
   beneighbor = "Won't you be my neighbor?";
@@ -15,22 +13,23 @@ $(document).ready(function() {
       numberInput.push(i.toString());
     }
 
-    console.log(numberInput)
+    const numberOutput = [];
 
-for (i = 0; i < numberInput.length; i++) {
-    if (digitInput.includes("3")){
-      console.log(numberInput)
-      return beneighbor
-    } else if (digitInput.includes("2"))  {
-      console.log(numberInput)
-      return boop
-    } else if (digitInput.includes("1")) {
-      console.log(numberInput)
-      return beep
-    } else {
-      return "number"
-    }
-  };
+    numberInput.forEach(function(number) { 
+      if (number.includes("3")){
+        numberOutput.push(beneighbor)
+        console.log(numberOutput)
+        return beneighbor
+      } else if (number.includes("2"))  {
+        numberOutput.push(boop)
+        console.log(numberOutput)
+      } else if (number.includes("1")) {
+        numberOutput.push(beep)
+        console.log(numberOutput)
+      } else {
+        numberOutput.push(number)
+      }
+    });
   
 }
 // UI logic 
@@ -38,7 +37,7 @@ for (i = 0; i < numberInput.length; i++) {
   event.preventDefault();
   const covertedNumber = numberArray(digitInput);
   
-  $("#output").text(covertedNumber);
+  $("#output").text(numberLoop);
 
   });
 });
