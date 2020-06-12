@@ -6,7 +6,7 @@
 
 ## Description
 
-_The website allows users to input a number which returns a range of numbers from 0 to the user inputted number with exceptions. If the number contains a 1 the digits will be replaced with "beep". If the number contains a 2 the digit will be replaced by "boop". If the digit contains a 3, the digit will be replaced with "Won't you be my neighbor". The rules are written from least to most important. So if the number is 32, the number 32 is replaced by "Won't you be my neighbor". 
+_The website allows users to input a number which returns a range of numbers from 0 to the user inputted number with exceptions. If the number contains a 1 the digits will be replaced with "beep". If the number contains a 2 the digit will be replaced by "boop". If the digit contains a 3, the digit will be replaced with "Won't you be my neighbor". The rules are written from least to most important. So if the number is 32, the number 32 is replaced by "Won't you be my neighbor". You can view the website here https://emmahhellman.github.io/numbers/_
 
 ## Specifications
 
