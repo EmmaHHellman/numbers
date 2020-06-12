@@ -10,31 +10,31 @@ _The website allows users to input a number which returns a range of numbers fro
 
 ## Specifications
 
-##Behavior
+Behavior
 
 Return a range of numbers from 0 to the users inputted number
 Input: '4'
 Output: '0, 1, 2, 3, 4'
 
-##Behavior
+Behavior
 
 All digits containing a 1 should output "Beep!"
 Input: 1
 Output: "0", "Beep"
 
-##Behavior
+Behavior
 
 All digits containing a 2 should output "Boop!"
 Input: 2
 Output: "0", "Beep", "Boop!"
 
-##Behavior
+Behavior
 
 All digits containining a 3 should output "Won't you be my neighbor"
 Input: 3
 Output: "0", "Beep", "Boop", "Won't you be my neighbor"
 
-##Behavior
+Behavior
 
 The rules are written from least to most important so the second takes precedence over the first and the third takes precedence over the second.  
 Input: 23
